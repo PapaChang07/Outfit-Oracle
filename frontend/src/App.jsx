@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import GenerateOutfitPage from "./pages/GenerateOutfitPage";
 import api from "./services/api";
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
   return (
     <div style={{ padding: "2rem", fontFamily: "Arial" }}>
       <h1>Outfit Oracle</h1>
-      <p>Backend status: {message}</p>
+      <p style={{ fontSize: "0.9rem" }}>Backend status: {message}</p>
+      <GenerateOutfitPage />
     </div>
   );
 }
