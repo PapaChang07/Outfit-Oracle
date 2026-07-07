@@ -182,7 +182,7 @@ const wardrobe = [
   {
     "id": "motion-liberty-short-7-black",
     "name": "Liberty Short 7\" Black",
-    "category": "Bottom",
+    "category": "bottom",
     "itemType": "Activewear",
     "fit": "Standard Fit",
     "material": "95% Polyester, 5% Spandex",
