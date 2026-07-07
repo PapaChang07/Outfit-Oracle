@@ -46,7 +46,7 @@ Return ONLY valid JSON in this format:
   },
   "explanation": ""
 }
-`;;
+`;
 
     const response = await client.chat.completions.create({
       model: "gpt-4o-mini",
