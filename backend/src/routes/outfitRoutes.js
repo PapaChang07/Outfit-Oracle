@@ -8,43 +8,57 @@ const client = new OpenAI({
 
 const wardrobe = require("../data/wardrobeData");
 
-const wardrobeList = wardrobe
-  .map(
-    (item) =>
-      `- ${item.category}: ${item.name}, color: ${item.color}, style: ${item.style}, warmth: ${item.warmth}`
-  )
-  .join("\n");
+function formatWardrobeItem(item) {
+  return [
+    `- Name: ${item.name}`,
+    `  Category: ${item.category}`,
+    `  Item type: ${item.itemType || "N/A"}`,
+    `  Brand: ${item.brand || "N/A"}`,
+    `  Fit/Cut: ${item.fit || "N/A"}`,
+    `  Material/Fabric: ${item.material || "N/A"}`,
+    `  Color/Pattern: ${item.colorPattern || "N/A"}`,
+  ].join("\n");
+}
+
+const wardrobeText = wardrobe.map(formatWardrobeItem).join("\n\n");
 
 router.post("/generate", async (req, res) => {
   try {
     const { occasion, temperature, weather, vibe } = req.body;
 
     const prompt = `
-You are a personal stylist for a 26-year-old Asian male with warm undertones.
+You are Outfit Oracle, a practical personal stylist.
 
-Generate an outfit based on:
+The user wants an outfit for:
 - Occasion: ${occasion}
 - Temperature: ${temperature}
 - Weather: ${weather}
 - Vibe: ${vibe}
 
-You MUST follow these rules:
-- ONLY use items from the wardrobe below
-- DO NOT invent new clothing items
-- If a category is missing, return "none"
+Here is the user's wardrobe:
+${wardrobeText}
 
-Wardrobe:
-${wardrobeList}
+Rules:
+- Only recommend items that appear in the wardrobe.
+- Pick one complete outfit.
+- Include top, bottom, shoes, and outerwear if useful.
+- Do not invent clothing items.
+- Consider temperature, weather, formality, color harmony, and vibe.
+- If an item is optional, mark it as optional.
+- Explain why the outfit works in a natural, concise way.
+- Use the exact item names from the wardrobe.
 
-Return ONLY valid JSON in this format:
+Return valid JSON in this exact shape:
 {
   "outfit": {
     "top": "",
     "bottom": "",
+    "shoes": "",
     "outerwear": "",
-    "shoes": ""
+    "accessories": []
   },
-  "explanation": ""
+  "explanation": "",
+  "alternatives": []
 }
 `;
 
@@ -52,14 +66,17 @@ Return ONLY valid JSON in this format:
       model: "gpt-4o-mini",
       response_format: { type: "json_object" },
       messages: [
-        { role: "system", content: "You are a helpful fashion stylist. Return only valid JSON." },
+        {
+          role: "system",
+          content:
+            "You are a helpful fashion stylist. Return only valid JSON.",
+        },
         { role: "user", content: prompt },
       ],
     });
 
     const text = response.choices[0].message.content;
 
-    // try parsing AI response
     let parsed;
     try {
       parsed = JSON.parse(text);
@@ -71,7 +88,6 @@ Return ONLY valid JSON in this format:
     }
 
     res.json(parsed);
-
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: "Something went wrong" });
