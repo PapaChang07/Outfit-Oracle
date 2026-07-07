@@ -65,49 +65,36 @@ function inferCategory(rawCategory, itemName) {
 
   const categoryRules = [
     {
-      category: "outerwear",
-      keywords: [
-        "jacket",
-        "coat",
-        "blazer",
-        "cardigan",
-        "overshirt",
-        "shacket",
-        "parka",
-        "windbreaker",
-      ],
-    },
-    {
-      category: "bottom",
-      keywords: [
-        "pants",
-        "trousers",
-        "jeans",
-        "shorts",
-        "chinos",
-        "slacks",
-        "sweatpants",
-      ],
-    },
-    {
       category: "shoes",
       keywords: [
+        "footwear",
+        "shoe",
         "shoes",
         "sneakers",
+        "loafer",
         "loafers",
         "boots",
+        "boot",
         "sandals",
+        "sandal",
         "slides",
         "derbies",
         "oxfords",
+        "chukka",
+        "flip flop",
+        "birkenstock",
       ],
     },
     {
       category: "accessory",
       keywords: [
+        "accessory",
+        "accessories",
         "belt",
         "hat",
         "cap",
+        "beanie",
+        "gloves",
         "watch",
         "bracelet",
         "necklace",
@@ -117,8 +104,26 @@ function inferCategory(rawCategory, itemName) {
       ],
     },
     {
+      category: "outerwear",
+      keywords: [
+        "outerwear",
+        "jacket",
+        "coat",
+        "blazer",
+        "cardigan",
+        "overshirt",
+        "shacket",
+        "parka",
+        "windbreaker",
+        "vest",
+        "down vest",
+      ],
+    },
+    {
       category: "top",
       keywords: [
+        "top",
+        "tops",
         "shirt",
         "tee",
         "t-shirt",
@@ -130,6 +135,25 @@ function inferCategory(rawCategory, itemName) {
         "button-up",
         "henley",
         "crewneck",
+        "half zip",
+        "quarter zip",
+        "baselayer",
+        "underlayer",
+      ],
+    },
+    {
+      category: "bottom",
+      keywords: [
+        "bottom",
+        "bottoms",
+        "pants",
+        "trousers",
+        "jeans",
+        "shorts",
+        "chinos",
+        "slacks",
+        "sweatpants",
+        "tights",
       ],
     },
   ];
@@ -172,7 +196,7 @@ function main() {
 
   const csvText = fs.readFileSync(csvPath, "utf8");
   const rows = parseCsv(csvText);
-  const wardrobe = rows.map(normalizeWardrobeItem);
+  const wardrobe = rows.map(normalizeWardrobeItem).filter((item) => item.name && item.name.trim() !== "");
 
   const output = `const wardrobe = ${JSON.stringify(wardrobe, null, 2)};
 

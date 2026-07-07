@@ -2,7 +2,7 @@ const wardrobe = [
   {
     "id": "uniqlo-heattech-ribbed-beanie",
     "name": "HEATTECH Ribbed Beanie",
-    "category": "uncategorized",
+    "category": "accessory",
     "itemType": "Accessories",
     "fit": "One Size",
     "material": "80% Acrylic, 10% Nylon, 9% Wool, 1% Spandex",
@@ -82,7 +82,7 @@ const wardrobe = [
   {
     "id": "alepo-black-leather-gloves",
     "name": "Black Leather Gloves",
-    "category": "uncategorized",
+    "category": "accessory",
     "itemType": "Accessories",
     "fit": "",
     "material": "Sheepskin Leather, Italian cashmere lining",
@@ -120,19 +120,9 @@ const wardrobe = [
     "brand": "Mejuri"
   },
   {
-    "id": "",
-    "name": "",
-    "category": "uncategorized",
-    "itemType": "",
-    "fit": "",
-    "material": "",
-    "colorPattern": "",
-    "brand": ""
-  },
-  {
     "id": "underarmour-men-s-under-armour-tech-zip",
     "name": "Men's Under Armour Tech Zip",
-    "category": "uncategorized",
+    "category": "top",
     "itemType": "Activewear",
     "fit": "Loose Fit",
     "material": "100% Polyester",
@@ -192,7 +182,7 @@ const wardrobe = [
   {
     "id": "motion-liberty-short-7-black",
     "name": "Liberty Short 7\" Black",
-    "category": "uncategorized",
+    "category": "Bottom",
     "itemType": "Activewear",
     "fit": "Standard Fit",
     "material": "95% Polyester, 5% Spandex",
@@ -232,7 +222,7 @@ const wardrobe = [
   {
     "id": "lululemon-logo-sport-long-sleeve-half-zip",
     "name": "Logo Sport Long-Sleeve Half Zip",
-    "category": "uncategorized",
+    "category": "top",
     "itemType": "Activewear",
     "fit": "Classic Fit",
     "material": "88% Nylon (recycled), 12% Elastane",
@@ -242,7 +232,7 @@ const wardrobe = [
   {
     "id": "lululemon-metal-vent-tech-half-zip",
     "name": "Metal Vent Tech Half Zip",
-    "category": "uncategorized",
+    "category": "top",
     "itemType": "Activewear",
     "fit": "Slim Fit",
     "material": "53% Nylon, 40% Polyester (recycled), 4% Elastane, 3% X-Static Nylon",
@@ -250,19 +240,9 @@ const wardrobe = [
     "brand": "Lululemon"
   },
   {
-    "id": "",
-    "name": "",
-    "category": "uncategorized",
-    "itemType": "",
-    "fit": "",
-    "material": "",
-    "colorPattern": "",
-    "brand": ""
-  },
-  {
     "id": "birkenstock-birkenstock-arizonas",
     "name": "Birkenstock Arizonas",
-    "category": "uncategorized",
+    "category": "shoes",
     "itemType": "Footwear",
     "fit": "",
     "material": "Leather",
@@ -282,7 +262,7 @@ const wardrobe = [
   {
     "id": "nisolo-everyday-chukka-boot",
     "name": "Everyday Chukka Boot",
-    "category": "uncategorized",
+    "category": "shoes",
     "itemType": "Footwear",
     "fit": "",
     "material": "Leather",
@@ -292,7 +272,7 @@ const wardrobe = [
   {
     "id": "adidas-originals-handball-spezial",
     "name": "Originals Handball Spezial",
-    "category": "uncategorized",
+    "category": "shoes",
     "itemType": "Footwear",
     "fit": "",
     "material": "Suede",
@@ -302,7 +282,7 @@ const wardrobe = [
   {
     "id": "nike-air-force-1-07",
     "name": "Air Force 1 '07",
-    "category": "uncategorized",
+    "category": "shoes",
     "itemType": "Footwear",
     "fit": "",
     "material": "Leather",
@@ -312,7 +292,7 @@ const wardrobe = [
   {
     "id": "florsheim-oxford",
     "name": "Oxford",
-    "category": "uncategorized",
+    "category": "shoes",
     "itemType": "Footwear",
     "fit": "",
     "material": "Leather",
@@ -342,7 +322,7 @@ const wardrobe = [
   {
     "id": "havaianas-top-flip-flop",
     "name": "Top Flip Flop",
-    "category": "uncategorized",
+    "category": "shoes",
     "itemType": "Footwear",
     "fit": "",
     "material": "Rubber",
@@ -352,7 +332,7 @@ const wardrobe = [
   {
     "id": "reebok-nano-x4",
     "name": "Nano X4",
-    "category": "uncategorized",
+    "category": "shoes",
     "itemType": "Footwear",
     "fit": "",
     "material": "Rubber, Leather",
@@ -362,7 +342,7 @@ const wardrobe = [
   {
     "id": "charles-trywhitt-sand-suede-slip-on-loafer",
     "name": "Sand Suede Slip-On Loafer",
-    "category": "uncategorized",
+    "category": "shoes",
     "itemType": "Footwear",
     "fit": "",
     "material": "Leather",
@@ -392,7 +372,7 @@ const wardrobe = [
   {
     "id": "allbirds-tree-runner-nz",
     "name": "Tree Runner NZ",
-    "category": "uncategorized",
+    "category": "shoes",
     "itemType": "Footwear",
     "fit": "Standard Fit",
     "material": "Eucalyptus tree fiber upper, sugarcane-based EVA midsole, merino wool lining",
@@ -402,7 +382,7 @@ const wardrobe = [
   {
     "id": "brooks-brooks-men-s-glycerin-22-neutral-running-shoe",
     "name": "Brooks Men’s Glycerin 22 Neutral Running Shoe",
-    "category": "uncategorized",
+    "category": "shoes",
     "itemType": "Footwear",
     "fit": "Standard Fit",
     "material": "Engineered mesh upper, nitrogen-infused DNA Tuned midsole, rubber outsole",
@@ -412,22 +392,12 @@ const wardrobe = [
   {
     "id": "banana-republic-suede-fisherman-sandal",
     "name": "Suede Fisherman Sandal",
-    "category": "uncategorized",
+    "category": "shoes",
     "itemType": "Footwear",
     "fit": "C Width",
     "material": "Suede uppers, leather footbed, rubber soles",
     "colorPattern": "Burnt Brown",
     "brand": "Banana Republic"
-  },
-  {
-    "id": "",
-    "name": "",
-    "category": "uncategorized",
-    "itemType": "",
-    "fit": "",
-    "material": "",
-    "colorPattern": "",
-    "brand": ""
   },
   {
     "id": "columbia-columbia-men-s-down-jacket",
@@ -452,7 +422,7 @@ const wardrobe = [
   {
     "id": "bonobos-italian-wool-harrington-jacket",
     "name": "Italian Wool Harrington Jacket",
-    "category": "outerwear",
+    "category": "accessory",
     "itemType": "Outerwear",
     "fit": "Standard Fit",
     "material": "49% Wool | 24% Acrylic | 12% Polyester | 10% Polyamide| 5% Other Fibers",
@@ -472,7 +442,7 @@ const wardrobe = [
   {
     "id": "lululemon-navigation-down-hoodie",
     "name": "Navigation Down Hoodie",
-    "category": "top",
+    "category": "outerwear",
     "itemType": "Outerwear",
     "fit": "Classic Fit",
     "material": "87% Nylon, 13% Elastane",
@@ -522,7 +492,7 @@ const wardrobe = [
   {
     "id": "uniqlo-ultra-light-down-vest",
     "name": "Ultra Light Down Vest",
-    "category": "uncategorized",
+    "category": "outerwear",
     "itemType": "Outerwear",
     "fit": "Standard Fit",
     "material": "100% Down",
@@ -532,7 +502,7 @@ const wardrobe = [
   {
     "id": "banana-republic-vegan-suede-reversible-vest",
     "name": "Vegan Suede Reversible Vest",
-    "category": "uncategorized",
+    "category": "outerwear",
     "itemType": "Outerwear",
     "fit": "Standard Fit",
     "material": "100% polyester",
@@ -582,7 +552,7 @@ const wardrobe = [
   {
     "id": "bonobos-harrington-jacket",
     "name": "Harrington Jacket",
-    "category": "outerwear",
+    "category": "accessory",
     "itemType": "Outerwear",
     "fit": "Relaxed Fit",
     "material": "50% Cotton | 50% Nylon",
@@ -592,7 +562,7 @@ const wardrobe = [
   {
     "id": "banana-republic-herringbone-cotton-linen-double-breasted-suit-jacket",
     "name": "Herringbone Cotton-Linen Double-Breasted Suit Jacket",
-    "category": "outerwear",
+    "category": "accessory",
     "itemType": "Outerwear",
     "fit": "Regular Fit",
     "material": "Linen Blend",
@@ -608,16 +578,6 @@ const wardrobe = [
     "material": "97% Organic Cotton Twill, 3% Spandex",
     "colorPattern": "Military Olive",
     "brand": "Quince"
-  },
-  {
-    "id": "",
-    "name": "",
-    "category": "uncategorized",
-    "itemType": "",
-    "fit": "",
-    "material": "",
-    "colorPattern": "",
-    "brand": ""
   },
   {
     "id": "lululemon-abc-classic-fit-5-pocket-pant",
@@ -990,16 +950,6 @@ const wardrobe = [
     "brand": "Banana Republic"
   },
   {
-    "id": "",
-    "name": "",
-    "category": "uncategorized",
-    "itemType": "",
-    "fit": "",
-    "material": "",
-    "colorPattern": "",
-    "brand": ""
-  },
-  {
     "id": "banana-republic-slim-chambray-shirt",
     "name": "Slim Chambray Shirt",
     "category": "top",
@@ -1240,16 +1190,6 @@ const wardrobe = [
     "brand": "Banana Republic"
   },
   {
-    "id": "",
-    "name": "",
-    "category": "uncategorized",
-    "itemType": "",
-    "fit": "",
-    "material": "",
-    "colorPattern": "",
-    "brand": ""
-  },
-  {
     "id": "zara-textured-jogger-short",
     "name": "Textured Jogger Short",
     "category": "bottom",
@@ -1318,16 +1258,6 @@ const wardrobe = [
     "material": "97% cotton, 3% elastane spandex",
     "colorPattern": "Cream white",
     "brand": "Banana Republic"
-  },
-  {
-    "id": "",
-    "name": "",
-    "category": "uncategorized",
-    "itemType": "",
-    "fit": "",
-    "material": "",
-    "colorPattern": "",
-    "brand": ""
   },
   {
     "id": "stussy-8-ball-embroidered-hoodie",
@@ -1542,7 +1472,7 @@ const wardrobe = [
   {
     "id": "32-degrees-men-s-lightweight-baselayer-crew-top",
     "name": "Men's Lightweight Baselayer Crew Top",
-    "category": "uncategorized",
+    "category": "top",
     "itemType": "Tops",
     "fit": "Base Layer",
     "material": "40% Polyester, 34% Acrylic, 22% Rayon, 4% Spandex",
@@ -1632,7 +1562,7 @@ const wardrobe = [
   {
     "id": "banana-republic-waffle-knit-top",
     "name": "Waffle Knit Top",
-    "category": "uncategorized",
+    "category": "top",
     "itemType": "Tops",
     "fit": "Standard Fit",
     "material": "53% cotton, 46% polyester, 1% elastane spandex",
@@ -1642,7 +1572,7 @@ const wardrobe = [
   {
     "id": "banana-republic-waffle-knit-top",
     "name": "Waffle Knit Top",
-    "category": "uncategorized",
+    "category": "top",
     "itemType": "Tops",
     "fit": "Standard Fit",
     "material": "53% cotton, 46% polyester, 1% elastane spandex",
@@ -1920,29 +1850,9 @@ const wardrobe = [
     "brand": "Charles Tyrwhitt"
   },
   {
-    "id": "",
-    "name": "",
-    "category": "uncategorized",
-    "itemType": "",
-    "fit": "",
-    "material": "",
-    "colorPattern": "",
-    "brand": ""
-  },
-  {
-    "id": "",
-    "name": "",
-    "category": "uncategorized",
-    "itemType": "",
-    "fit": "",
-    "material": "",
-    "colorPattern": "",
-    "brand": ""
-  },
-  {
     "id": "uniqlo-heattech-tights",
     "name": "HEATTECH Tights",
-    "category": "uncategorized",
+    "category": "top",
     "itemType": "Underlayer",
     "fit": "Base Layer",
     "material": "39% Polyester, 32% Acrylic, 21% Rayon, 9% Spandex",
